@@ -1,3 +1,162 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 170px;
+    color: white;
+    background-color: #998675;
+    box-shadow: inset 0 -2px #736357;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.home {
+    color: white;
+    background-color: #171a21;
+    background-image: url(../images/homeBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.header__menu {
+    margin-right: 35px;
+}
+
+.menu__item {
+    margin-right: 24px;
+    font-size: 14px;
+}
+
+.menu__item:hover {
+    color: #c7b299;
+}
+
+.header__cart {
+    margin-right: 25px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__wrapper {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 280px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slide__subtitle {
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.03em;
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide__title {
+    display: block;
+    margin: 15px 0;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.slide__content {
+    max-width: 600px;
+    line-height: 24px;
+}
+
+.slide__button {
+    margin: 50px auto 0;
+}
+
+.slider .slider__pagination {
+    margin-top: 330px;
+    text-align: center;
+}
+
+.slider__pagination .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    margin: 0 2px;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+.slider__pagination .swiper-pagination-bullet-active {
+    background-color: transparent;
+    border-color: #d3c1ad;
+}
+
+.slider__navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    margin: auto 0;
+    z-index: 1;
+}
+
+.slider__navigation-prev, .slider__navigation-next {
+    height: 75px;
+    width: 40px;
+    background: url(../images/Slider-arrow/right.png) no-repeat;
+}
+
+.slider__navigation-prev {
+    transform: scaleX(-1);
+}
