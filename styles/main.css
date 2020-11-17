@@ -121,7 +121,7 @@ a {
 }
 
 .slider .slider__pagination {
-    margin-top: 330px;
+    margin-top: 250px;
     text-align: center;
 }
 
@@ -159,4 +159,57 @@ a {
 
 .slider__navigation-prev {
     transform: scaleX(-1);
+}
+
+.service {
+    padding: 80px 0;
+}
+
+.service__container {
+    width: 1200px;
+    display: flex;
+    text-align: center;
+}
+
+.service__item {
+    width: 25%;
+    padding: 0 15px;
+    color: #555;
+    transition: color 200ms;
+}
+
+.service__item::after {
+    display: inline-block;
+    content: "";
+    width: 70px;
+    height: 3px;
+    margin-top: 25px;
+    background-color: #f1eee9;
+    transition: background-color 200ms;
+}
+
+.service__item:hover {
+    color: #c7b299;
+}
+
+.service__item:hover::after {
+    background-color: #c7b299;
+}
+
+.service__icon {
+    font-size: 50px;
+}
+
+.service__title {
+    margin-top: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.service__text {
+    margin-top: 15px;
+    line-height: 24px;
+    color: #8c8c8c;
+    font-size: 14px;
 }
