@@ -14,7 +14,8 @@ a {
 }
 
 .container {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -38,6 +39,12 @@ a {
 
 .button:hover {
     background-color: #c7b299;
+}
+
+.section__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .home {
@@ -188,7 +195,7 @@ a {
 }
 
 .service__container {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     text-align: center;
 }
@@ -234,4 +241,45 @@ a {
     line-height: 24px;
     color: #8c8c8c;
     font-size: 14px;
+}
+
+.realization {
+    padding: 80px 0 50px;
+    background-color: #fbfaf8;
+    text-align: center;
+}
+
+.realization__container {
+    max-width: 1230px;
+}
+
+.realization__content {
+    margin: 15px auto 0;
+    line-height: 28px;
+    max-width: 770px;
+}
+
+.realization__images {
+    margin-top: 35px;
+    position: relative;
+    line-height: 0;
+}
+
+.realization__image-center {
+    position: relative;
+    z-index: 3;
+}
+
+.realization__image-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.realization__image-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
