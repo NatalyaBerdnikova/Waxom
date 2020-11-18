@@ -32,6 +32,12 @@ a {
     font-size: 14px;
     font-weight: 800;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.button:hover {
+    background-color: #c7b299;
 }
 
 .home {
@@ -48,6 +54,26 @@ a {
     align-items: center;
 }
 
+.header__icon {
+    transition: color 200ms;
+}
+
+.header__icon:hover {
+    color: #c7b299;
+}
+
+.header__icon + .header__icon {
+    margin-left: 25px;
+}
+
+.header__menu {
+    margin-right: 35px;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -59,25 +85,14 @@ a {
     font-size: 34px;
 }
 
-.header__logo {
-    margin-right: auto;
-}
-
-.header__menu {
-    margin-right: 35px;
-}
-
 .menu__item {
     margin-right: 24px;
     font-size: 14px;
+    transition: color 200ms;
 }
 
 .menu__item:hover {
     color: #c7b299;
-}
-
-.header__cart {
-    margin-right: 25px;
 }
 
 .slider {
@@ -154,7 +169,14 @@ a {
 .slider__navigation-prev, .slider__navigation-next {
     height: 75px;
     width: 40px;
-    background: url(../images/Slider-arrow/right.png) no-repeat;
+    font-size: 70px;
+    color: #998675;
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.slider__navigation-prev:hover, .slider__navigation-next:hover {
+    color: #d3c1ad;
 }
 
 .slider__navigation-prev {
