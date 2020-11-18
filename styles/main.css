@@ -180,6 +180,7 @@ a {
     color: #998675;
     cursor: pointer;
     transition: color 200ms;
+    outline: none;
 }
 
 .slider__navigation-prev:hover, .slider__navigation-next:hover {
@@ -244,7 +245,7 @@ a {
 }
 
 .realization {
-    padding: 80px 0 50px;
+    padding: 80px 0 0;
     background-color: #fbfaf8;
     text-align: center;
 }
@@ -282,4 +283,37 @@ a {
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+.promo {
+    padding: 45px 0 50px;
+    background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.promo__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    color: #f1f0f0;
+    letter-spacing: 0.01em;
+}
+
+.promo__name-project {
+    color: #c7b299;
+}
+
+.promo__text {
+    font-size: 18px;
+    color: #615855;
+    margin-top: 10px;
+}
+
+.promo__button {
+    flex-shrink: 0;
+    margin-left: 40px;
 }
