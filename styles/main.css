@@ -322,7 +322,7 @@ a {
 }
 
 .portfolio {
-  padding: 75px 0;
+  padding: 75px 0 80px;
   text-align: center;
 }
 
@@ -448,5 +448,52 @@ a {
 }
 
 .project:hover .project__subtitle {
+  color: #c7b299;
+}
+
+.presentation {
+  background-image: url(../images/backgroundVideo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 210px 0 205px;
+}
+
+.presentation__play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 67px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.presentation__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.presentation__title {
+  margin-top: 43px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+.presentation__description {
+  margin-top: 15px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.presentation__time {
+  margin-top: 30px;
   color: #c7b299;
 }
