@@ -545,3 +545,55 @@ a {
   font-size: 20px;
   margin-right: 30px;
 }
+
+.counters {
+  padding: 60px 0;
+  background: linear-gradient(to right, #211b19, #4e3427);
+}
+
+.counters__container {
+  display: flex;
+  justify-content: center;
+  max-width: 970px;
+}
+
+.counters__item {
+  text-align: center;
+  width: 20%;
+}
+
+.counters__item::after {
+  display: block;
+  content: "";
+  margin: 0 auto;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
+
+.counters__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: #c7b299;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.counters__number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.counters__title {
+  color: #c7b299;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+}
