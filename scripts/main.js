@@ -9,3 +9,13 @@ let sliderHome = new Swiper('.js-slider-home', {
       prevEl: '.slider__navigation-prev',
     },
 });
+
+let sliderPosts = new Swiper('.js-slider-posts', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.posts__navigation-next',
+    prevEl: '.posts__navigation-prev',
+  },
+});
