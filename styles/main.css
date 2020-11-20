@@ -13,6 +13,11 @@ a {
   color: white;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 1170px;
@@ -91,6 +96,7 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 34px;
+  color: white;
 }
 
 .menu__item {
@@ -768,4 +774,121 @@ a {
   align-items: center;
   width: 25%;
   max-height: 210px;
+}
+
+.contact {
+  background-color: #191919;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 80px 0;
+}
+
+.contact__container {
+  display: flex;
+}
+
+.contact__column {
+  width: 25%;
+  padding-right: 30px;
+}
+
+.contact__about-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 20px 0 25px;
+}
+
+.contact__about-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact__about-link:hover {
+  color: #c7b299;
+}
+
+.contact__title {
+  margin: 25px 0 10px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact__post {
+  padding: 20px 0 20px;
+  cursor: pointer;
+}
+
+.contact__post + .contact__post {
+  border-top: 1px solid #252525;
+}
+
+.contact__post-date {
+  font-size: 12px;
+  color: #363636;
+  transition: color 300ms;
+}
+
+.contact__post-text {
+  transition: color 300ms;
+}
+
+.contact__post:hover .contact__post-date {
+  color: white;
+}
+
+.contact__post:hover .contact__post-text {
+  color: #c7b299;
+}
+
+.contact__twit {
+  padding: 20px 0;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.contact__twit + .contact__twit {
+  border-top: 1px solid #252525;
+}
+
+.contact__twitter-link {
+  color: #00bff3;
+}
+
+.contact__twit-time {
+  font-size: 12px;
+  color: #363636;
+  transition: color 300ms;
+}
+
+.contact__twit-text {
+  transition: color 300ms;
+}
+
+.contact__twit:hover .contact__twit-time {
+  color: white;
+}
+
+.contact__twit:hover .contact__twit-text {
+  color: #c7b299;
+}
+
+.contact__dribble {
+  padding: 0;
+}
+
+.dribble__link {
+  max-width: 45%;
+  max-height: 98px;
+  margin: 5px;
+}
+
+.dribble__container {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
