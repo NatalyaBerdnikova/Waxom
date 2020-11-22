@@ -8,6 +8,10 @@ body {
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -368,10 +372,16 @@ img {
   padding: 7px 14px;
   border: 1px solid #ebebeb;
   border-radius: 3px;
+  cursor: pointer;
+  transition: border-color 300ms;
 }
 
 .filter__category + .filter__category {
   margin-left: 9px;
+}
+
+.filter__category:hover {
+  border-color: #998675;
 }
 
 .filter__category--active {
@@ -476,6 +486,11 @@ img {
   font-size: 67px;
   margin: 0 auto;
   cursor: pointer;
+  transition: color 300ms;
+}
+
+.presentation__play:hover {
+  color: #c7b299;
 }
 
 .presentation__text {
@@ -514,8 +529,8 @@ img {
 }
 
 .adaptive__image {
-  max-width: 423px;
-  max-height: 616px;
+  min-width: 425px;
+  max-height: 555px;
   padding-left: 40px;
 }
 
@@ -542,7 +557,7 @@ img {
 }
 
 .adaptive__list li::before {
-  font-family: 'icomoon' !important;
+  font-family: "icomoon";
   content: "\e901";
   display: inline-block;
   height: 21px;
@@ -635,9 +650,7 @@ img {
   border-top: none;
   background-color: transparent;
   padding: 30px;
-  transition:
-    background-color 500ms,
-    border-color 500ms;
+  transition: background-color 500ms, border-color 500ms;
 }
 
 .posts__title {
@@ -704,7 +717,7 @@ img {
 }
 
 .posts__item:hover .posts__text-content {
-  color:white;
+  color: white;
 }
 
 .posts__item:hover .posts__text {
@@ -733,7 +746,8 @@ img {
   cursor: pointer;
 }
 
-.posts__navigation-next:hover, .posts__navigation-prev:hover {
+.posts__navigation-next:hover,
+.posts__navigation-prev:hover {
   color: #c7b299;
 }
 
